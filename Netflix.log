@@ -1,0 +1,72 @@
+commit 824ad5421fb5ea1c3421a19f739d552ca3674f29
+Merge: d21f85e b3d2c13
+Author: Hunter DeGroot <hunterdegroot@gmail.com>
+Date:   Thu Feb 18 01:54:50 2016 -0600
+
+    completed results need to do testing
+
+commit b3d2c137dfb0373f31271be368a6cee00040678f
+Author: Hunter DeGroot <hunterdegroot@gmail.com>
+Date:   Thu Feb 18 01:52:02 2016 -0600
+
+    fully functional missing test and weird error on on input in two of the caches
+
+commit d21f85ef88aee624f3e1f54440918fb111a31393
+Author: Hunter DeGroot <hunterdegroot@gmail.com>
+Date:   Thu Feb 18 01:43:33 2016 -0600
+
+    format error
+
+commit cad6ce50a666e72d20b635b29d62ff5c1097c5e9
+Merge: 9d14810 0f75522
+Author: Hunter DeGroot <hunterdegroot@gmail.com>
+Date:   Thu Feb 18 01:40:55 2016 -0600
+
+    merge conflict
+
+commit 0f755229c432102441bfef29cf7b476cc93f0f80
+Author: Hunter DeGroot <hunterdegroot@gmail.com>
+Date:   Thu Feb 18 01:28:24 2016 -0600
+
+    Simple implementation
+
+commit 9d14810cfa3a70e39257da7ab4332e48b92847bc
+Merge: 5786f19 932ef4d
+Author: Hunter DeGroot <hunterdegroot@gmail.com>
+Date:   Wed Feb 17 20:54:43 2016 -0600
+
+    git ignore
+
+commit 932ef4d48ef5b9ba416319634fba76cd16b2bc5d
+Author: Hunter DeGroot <hunterdegroot@gmail.com>
+Date:   Wed Feb 17 20:51:36 2016 -0600
+
+    changing caches
+
+commit 5786f193ee230b6686faea0f6dd7b91b41cbb640
+Author: Hunter DeGroot <hunterdegroot@gmail.com>
+Date:   Wed Feb 17 20:45:35 2016 -0600
+
+    Skele
+
+commit 875d5d74fe3c7612667edf1064586aafedc17d39
+Merge: db6a1d5 dba07b0
+Author: Hunter DeGroot <hunterdegroot@gmail.com>
+Date:   Mon Feb 15 01:17:25 2016 -0600
+
+    Merge branch 'dev'
+
+commit dba07b05a7eea453f31e772a59122f574b184e82
+Author: Hunter DeGroot <hunterdegroot@gmail.com>
+Date:   Mon Feb 15 01:16:54 2016 -0600
+
+    skill files attempt
+    
+    need to switch to lab machines because imports messing up on my mac due
+    to both pythons being installed or something
+
+commit db6a1d56820e34c81136fa10bfb852b0545f6a81
+Author: Hunter DeGroot <hunterdegroot@gmail.com>
+Date:   Mon Feb 15 00:12:44 2016 -0600
+
+    Initial commit
