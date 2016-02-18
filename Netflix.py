@@ -60,32 +60,32 @@ def netflix_solve (r, w) :
 	movieId = 0
 	error = 0
 	ratingCount = 0
+	actual = 1
 	for line in r :
 		if ':' in line.strip() :
-			movieId = line.split(':')[0]
-			w.write(line)
+			movieId = int(line.split(':')[0])
+#			w.write(line)
 		else :
 			ratingCount += 1
-			custId = line
+			custId = int(line)
 
 			# better solution (cache is missing one value?!)
-			prediction = movie_avgs[int(movieId)]
+			prediction = movie_avgs[movieId]
 
 			try:
-				prediction = movie_avgs[int(movieId)] * cust_ratios[int(custId)]
+				prediction = movie_avgs[movieId] * cust_ratios[custId]
 			except Exception:
 				break
 
-			w.write('%.2f' % prediction+"\n")			
-			actual = 1
-
+#			w.write('%.1f' % prediction+"\n")			
+			
 			try:
-				actual = correct_scores[int(movieId)][int(custId)]
+				actual = correct_scores[movieId][custId]
 			except Exception:
 				#print("Cust: " + str(custId))
 				#print("Movie: " + str(movieId))
 				break
 
-			error += (actual - prediction)**2
+			error += square(actual - prediction)
 			
-	#w.write('RMSE: ' + '%.2f' % math.sqrt(error/ratingCount)+"\n")			 				
+	w.write('RMSE: ' + '%.2f' % sqrt(error/ratingCount)+"\n")			 				
