@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # ------------------------------
-# Copyright (C) 2015
+# Copyright (C) 2016
 # Hunter DeGroot
 # ------------------------------
 

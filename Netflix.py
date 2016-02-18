@@ -9,10 +9,13 @@
 import os
 import requests
 import pickle
-import math
+from numpy import mean, sqrt, square, subtract
 
 from urllib.request import urlopen
 
+def RMSE(a,p):
+	return sqrt(mean(square(subtract(a,p))))
+	
 
 def netflix_solve (r, w) :
 	
