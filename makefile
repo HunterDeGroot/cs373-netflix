@@ -55,7 +55,11 @@ status:
 	git remote -v
 	git status
 
-test: RunNetflix.tmp
+test: RunNetflix.in RunNetflix.py
+	python3 RunNetflix.py < RunNetflix.in > RunNetflix.out
+
+test-actual: RunNetflix.py probe.txt
+	python3 RunNetflix.py < probe.txt > probe.out
 
 collatz-tests:
 	git clone https://github.com/cs373-fall-2015/netflix-tests.git
