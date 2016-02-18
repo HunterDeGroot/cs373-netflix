@@ -55,8 +55,13 @@ def netflix_solve (r, w) :
 			ratingCount += 1
 			custId = line
 
-			# simple solution just return the movie rating avg
+			# better solution (cache is missing one value?!)
 			prediction = movie_avgs[int(movieId)]
+			try:
+				prediction = movie_avgs[int(movieId)] * cust_ratios[int(custId)]
+			except Exception:
+				break
+
 			w.write('%.1f' % prediction+"\n")			
 
 			actual = 1
