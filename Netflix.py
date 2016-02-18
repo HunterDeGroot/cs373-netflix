@@ -30,7 +30,7 @@ def netflix_solve (r, w) :
 		cust_ratios = pickle.load(f)
 	else:
 		bytes = urlopen('http://www.cs.utexas.edu/users/downing/netflix-caches/trp676-customer_ratio.pickle').read()
-                cust_ratios = pickle.loads(bytes)
+		cust_ratios = pickle.loads(bytes)
 
 	# correct scores
 	if os.path.isfile('http://www.cs.utexas.edu/users/downing/public_html/netflix-caches/mdg7227-real_scores.pickle') :
