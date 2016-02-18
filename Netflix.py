@@ -64,7 +64,7 @@ def netflix_solve (r, w) :
 	for line in r :
 		if ':' in line.strip() :
 			movieId = int(line.split(':')[0])
-#			w.write(line)
+			w.write(line)
 		else :
 			ratingCount += 1
 			custId = int(line)
@@ -77,7 +77,7 @@ def netflix_solve (r, w) :
 			except Exception:
 				break
 
-#			w.write('%.1f' % prediction+"\n")			
+			w.write('%.1f' % prediction+"\n")			
 			
 			try:
 				actual = correct_scores[movieId][custId]

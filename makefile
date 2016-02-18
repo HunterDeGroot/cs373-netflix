@@ -58,7 +58,7 @@ status:
 test: RunNetflix.in RunNetflix.py
 	python3 RunNetflix.py < RunNetflix.in > RunNetflix.out
 
-test-actual: RunNetflix.py probe.txt
+test-probe: RunNetflix.py probe.txt
 	python3 RunNetflix.py < probe.txt > probe.out
 
 collatz-tests:
