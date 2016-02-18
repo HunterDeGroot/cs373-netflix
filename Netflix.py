@@ -8,6 +8,7 @@
 
 import os
 import requests
+import pickle
 
 from urllib.request import urlopen
 
@@ -20,5 +21,7 @@ def netflix_solve () :
 		# Read cache from HTTP
 		bytes = urlopen('http://www.cs.utexas.edu/users/downing/netflix-caches/ad35988-movie_stddev_average.pickle').read()
 		user_cache = pickle.loads(bytes)
+	print (user_cache[17747])
+
 		
 		# use user_cache here
