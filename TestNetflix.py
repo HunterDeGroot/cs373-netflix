@@ -14,6 +14,7 @@
 
 from io       import StringIO
 from unittest import main, TestCase
+import sys
 
 from Netflix import netflix_solve
 
@@ -22,72 +23,28 @@ from Netflix import netflix_solve
 # -----------
 
 class TestNetflix (TestCase) :
-    # ----
-#     read
-#     ----
-# 
-#     def test_read (self) :
-#         s    = "1 10\n"
-#         i, j = collatz_read(s)
-#         self.assertEqual(i,  1)
-#         self.assertEqual(j, 10)
-# 
-#     ----
-#     eval
-#     ----
-# 
-#     def test_eval_1 (self) :
-#         v = collatz_eval(9, 9)
-#         self.assertEqual(v, 20)
-# 
-#     def test_eval_2 (self) :
-#         v = collatz_eval(100000, 200)
-#         self.assertEqual(v, 351)
-# 
-#     def test_eval_3 (self) :
-#         v = collatz_eval(210, 201)
-#         self.assertEqual(v, 89)
-# 
-#     def test_eval_4 (self) :
-#         v = collatz_eval(900, 1000)
-#         self.assertEqual(v, 174)
-#         
-#     ----
-#     cycles
-#     ----    
-#     
-#     def test_eval_5 (self) :
-#         v = collatz_cycles(1)
-#         self.assertEqual(v, 1)
-# 
-#     def test_eval_6 (self) :
-#         v = collatz_cycles(5)
-#         self.assertEqual(v, 6)
-# 
-#     def test_eval_7 (self) :
-#         v = collatz_cycles(10)
-#         self.assertEqual(v, 7)
-# 
-#     def test_eval_8 (self) :
-#         v = collatz_cycles(11)
-#         self.assertEqual(v, 15)
-# 
-#     -----
-#     print
-#     -----
-# 
-#     def test_print (self) :
-#         w = StringIO()
-#         collatz_print(w, 1, 10, 20)
-#         self.assertEqual(w.getvalue(), "1 10 20\n")
-
+   
     # -----
     # solve
     # -----
 
     def test_solve (self) :
-        collatz_solve()
-        self.assertEqual(0, 0)
+    	s = StringIO("1000:\n98259\n79755\n1:\n30878\n317050")
+    	w = StringIO()
+    	test = netflix_solve(s, w)
+    	self.assertEqual(w.getvalue(), "1000:\n3.5\n3.9\n1:\n3.8\n3.6\nRMSE: 1.16\n")
+
+    def test_solve2 (self) :
+    	s = StringIO("798:\n3381\n1000:\n98259\n79755")
+    	w = StringIO()
+    	test = netflix_solve(s, w)
+    	self.assertEqual(w.getvalue(), "798:\n3.9\n1000:\n3.5\n3.9\nRMSE: 1.08\n")
+
+    def test_solve3 (self) :
+    	s = StringIO("10:\n1952305\n1531863\n1000:\n2326571\n977808")
+    	w = StringIO()
+    	test = netflix_solve(s, w)
+    	self.assertEqual(w.getvalue(), "10:\n2.9\n2.9\n1000:\n3.4\n2.9\nRMSE: 0.21\n")
 
 # ----
 # main
