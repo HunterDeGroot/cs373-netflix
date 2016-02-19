@@ -75,16 +75,16 @@ def netflix_solve (r, w) :
 			try:
 				prediction = movie_avgs[movieId] * cust_ratios[custId]
 			except Exception:
+				w.write("Cust: " + str(custId))
+				w.write("Movie: " + str(movieId))
 				break
 
 			w.write('%.1f' % prediction+"\n")			
 			
-			try:
-				actual = correct_scores[movieId][custId]
-			except Exception:
-				#print("Cust: " + str(custId))
-				#print("Movie: " + str(movieId))
-				break
+#			try:
+			actual = correct_scores[movieId][custId]
+#			except Exception:
+#			break
 
 			error += square(actual - prediction)
 			
