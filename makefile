@@ -1,9 +1,9 @@
 FILES :=                              \
     .travis.yml                       \
-    netflix-tests/jhd742-RunCollatz.in   \
-    netflix-tests/jhd742-RunCollatz.out  \
-    netflix-tests/jhd742-TestCollatz.out \
-    netflix-tests/jhd742-TestCollatz.py  \
+    netflix-tests/jhd742-RunNetflix.in   \
+    netflix-tests/jhd742-RunNetflix.out  \
+    netflix-tests/jhd742-TestNetflix.out \
+    netflix-tests/jhd742-TestNetflix.py  \
     Netflix.html                      \
     Netflix.log                       \
     Netflix.py                        \

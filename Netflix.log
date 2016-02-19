@@ -1,3 +1,21 @@
+commit bcce1f5a518fbb3b087a3549052ec7275c59972d
+Author: Hunter DeGroot <hunterdegroot@gmail.com>
+Date:   Thu Feb 18 20:10:37 2016 -0600
+
+    Unit tests
+
+commit 139e27d038dc473e76ea51140a5eaed1476ef84a
+Author: Hunter DeGroot <hunterdegroot@gmail.com>
+Date:   Thu Feb 18 16:03:09 2016 -0600
+
+    satisfy make check
+
+commit c6fea9bd9f202c1efe7969949a3260573990a596
+Author: Hunter DeGroot <hunterdegroot@gmail.com>
+Date:   Thu Feb 18 15:59:07 2016 -0600
+
+    pydoc
+
 commit 824ad5421fb5ea1c3421a19f739d552ca3674f29
 Merge: d21f85e b3d2c13
 Author: Hunter DeGroot <hunterdegroot@gmail.com>
