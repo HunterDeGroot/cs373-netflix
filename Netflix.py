@@ -75,8 +75,8 @@ def netflix_solve (r, w) :
 			try:
 				prediction = movie_avgs[movieId] * cust_ratios[custId]
 			except Exception:
-				w.write("Cust: " + str(custId))
-				w.write("Movie: " + str(movieId))
+#				w.write("Cust: " + str(custId))
+#				w.write("Movie: " + str(movieId))
 				break
 
 			w.write('%.1f' % prediction+"\n")			
